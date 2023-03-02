@@ -5,7 +5,7 @@ public class fibonacci {
          int b = 1;
          int intsoma = 0;
 
-         while (i < 17) {
+         while (intsoma <= 1000) {
              intsoma = a + b;
 
              a = b;
