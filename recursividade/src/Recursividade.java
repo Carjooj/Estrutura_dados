@@ -1,4 +1,4 @@
-public class Main {
+public class Recursividade {
     public static void main(String[] args) {
         System.out.println(multi(5 , 5));
 

@@ -1,0 +1,22 @@
+Index: src/desafio_sorteio.java
+===================================================================
+diff --git a/src/desafio_sorteio.java b/src/desafio_sorteio.java
+--- a/src/desafio_sorteio.java	
++++ b/src/desafio_sorteio.java	
+@@ -4,14 +4,13 @@
+     public static void main(String[] args) {
+         int i = 0;
+         int l = 0;
+-
+         Random r = new Random();
+         int valor = 0;
+-        int intsorteados[] = new int[10];
++        int intsorteados[] = new int[3];
+ 
+         while (i < intsorteados.length){
+             boolean boolverifica = false;
+-            valor = r.nextInt(10);
++            valor = r.nextInt(4);
+ 
+             for (l = 0;l < intsorteados.length; l++){
+                 if (intsorteados[l] == valor){
