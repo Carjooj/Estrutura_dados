@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b45e511-dd6f-4149-a21b-3a75af6630b3" name="Changes" comment="Lista de Exercicios concluida">
-      <change afterPath="$PROJECT_DIR$/Fila/Fila.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fila/src/Fila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fila/src/No.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pilhadinamica/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pilhadinamica/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/asteristico.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/asteristico2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/desafio_sorteio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/dez_cem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/exc_6_loop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/fatorial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/fibonacci.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/tabuada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/tabuada01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/val_5_6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/val_int_until_0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fila/src/Fila.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fila/src/Fila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fila/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fila/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila/Fila.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila/Fila.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila/No.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila/No.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +29,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2N5vpLUw8vXunvzDUY3Y12CLxZX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,19 +48,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/carjooj/IdeaProjects/Estrutura_dados",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
   <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

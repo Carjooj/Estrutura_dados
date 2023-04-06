@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Fila {
     int tamanho;
 
@@ -27,18 +29,41 @@ public class Fila {
         fim = no;
         tamanho++;
     }
+ Object primeiroFila () {
+        if (estaVazia()) {
+            return  null;
+        }
+        else {
+            return primeiro.info;
+        }
+    }
 
-    Object primeiroFila () {
-        return primeiro.info;
+    Object finalFila () {
+        if (estaVazia()) {
+            return null;
+        }
+        else {
+            return fim.info;
+        }
     }
 
     Object retirar () {
         if (estaVazia()) {
-            return "Vazia";
+            return null;
         }
         Object info = primeiro.info;
         primeiro = primeiro.ponteiro;
         tamanho--;
         return info;
+    }
+
+    String retornaFila() {
+        String tarefas = "";
+        No noAtual = primeiro;
+        for (int i = 1; i <= tamanho; i++) {
+            tarefas += noAtual.info + "\n";
+            noAtual = noAtual.ponteiro;
+        }
+        return tarefas;
     }
 }
