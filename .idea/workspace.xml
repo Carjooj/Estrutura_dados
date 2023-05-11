@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b45e511-dd6f-4149-a21b-3a75af6630b3" name="Changes" comment="Lista de Exercicios concluida">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorts/src/TesteSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fila/src/Fila.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fila/src/Fila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fila/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fila/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fila/Fila.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila/Fila.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fila/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fila/No.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila/No.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.TesteSort">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="listaencadeada" />
@@ -84,20 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Fila" />
+    <configuration name="TesteSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TesteSort" />
+      <module name="Sorts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteSort" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
