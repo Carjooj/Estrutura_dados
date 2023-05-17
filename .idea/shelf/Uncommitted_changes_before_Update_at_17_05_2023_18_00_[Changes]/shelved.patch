@@ -1,0 +1,324 @@
+Index: Fila/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\n    public static void main(String[] args) {\n        Fila fila = new Fila();\n\n        fila.adicionar(\"oswaldo\");\n        fila.adicionar(\"clodowaldo\");\n        fila.adicionar(\"nelson\");\n        fila.adicionar(\"pulga\");\n        fila.adicionar(\"babs\");\n\n        System.out.println(fila.retirar());\n\n        fila.adicionar(\"add\");\n\n        System.out.println(fila.primeiroFila());\n\n        System.out.println(fila.retirar());\n\n        System.out.println(fila.primeiroFila());\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Fila/src/Main.java b/Fila/src/Main.java
+--- a/Fila/src/Main.java	(revision 68aa6e62390abfee060859b5e88cd7bbb4efd24d)
++++ b/Fila/src/Main.java	(date 1681856550137)
+@@ -2,20 +2,6 @@
+     public static void main(String[] args) {
+         Fila fila = new Fila();
+ 
+-        fila.adicionar("oswaldo");
+-        fila.adicionar("clodowaldo");
+-        fila.adicionar("nelson");
+-        fila.adicionar("pulga");
+-        fila.adicionar("babs");
+-
+-        System.out.println(fila.retirar());
+-
+-        fila.adicionar("add");
+-
+-        System.out.println(fila.primeiroFila());
+ 
+-        System.out.println(fila.retirar());
+-
+-        System.out.println(fila.primeiroFila());
+     }
+ }
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/Estrutura_dados.iml\" filepath=\"$PROJECT_DIR$/.idea/Estrutura_dados.iml\" />\n      <module fileurl=\"file://$PROJECT_DIR$/Fila/Fila.iml\" filepath=\"$PROJECT_DIR$/Fila/Fila.iml\" />\n      <module fileurl=\"file://$PROJECT_DIR$/Projeto/Projeto.iml\" filepath=\"$PROJECT_DIR$/Projeto/Projeto.iml\" />\n      <module fileurl=\"file://$PROJECT_DIR$/listaencadeada/listaencadeada.iml\" filepath=\"$PROJECT_DIR$/listaencadeada/listaencadeada.iml\" />\n    </modules>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 68aa6e62390abfee060859b5e88cd7bbb4efd24d)
++++ b/.idea/modules.xml	(date 1681858080735)
+@@ -6,6 +6,7 @@
+       <module fileurl="file://$PROJECT_DIR$/Fila/Fila.iml" filepath="$PROJECT_DIR$/Fila/Fila.iml" />
+       <module fileurl="file://$PROJECT_DIR$/Projeto/Projeto.iml" filepath="$PROJECT_DIR$/Projeto/Projeto.iml" />
+       <module fileurl="file://$PROJECT_DIR$/listaencadeada/listaencadeada.iml" filepath="$PROJECT_DIR$/listaencadeada/listaencadeada.iml" />
++      <module fileurl="file://$PROJECT_DIR$/praticaProva/praticaProva.iml" filepath="$PROJECT_DIR$/praticaProva/praticaProva.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: listaencadeada/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\n    public static void main(String[] args) {\n        Lista lista = new Lista();\n        lista.adicionar(\"Clodowaldo\", \"40028922\");\n        lista.adicionar(\"Nelson\", \"123456789\");\n        lista.adicionar(\"Oswaldo\", \"987654321\");\n\n\n        System.out.println(lista.buscaTelefone(\"Clodowaldo\"));\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/listaencadeada/src/Main.java b/listaencadeada/src/Main.java
+--- a/listaencadeada/src/Main.java	(revision 68aa6e62390abfee060859b5e88cd7bbb4efd24d)
++++ b/listaencadeada/src/Main.java	(date 1681857344344)
+@@ -1,11 +1,35 @@
++/*
++Implemente uma função que receba uma lista e retorne a soma dos valores dos seus elementos.
++
++Escreva uma função que receba duas listas e retorne uma nova lista que contenha todos os elementos das listas originais, intercalados.
++
++Crie uma função que inverta a ordem dos elementos de uma lista.
++
++Escreva um programa que leia uma lista de números inteiros e retorne uma nova lista com apenas os números pares.
++ */
++
++
++
++
++
+ public class Main {
+     public static void main(String[] args) {
+         Lista lista = new Lista();
+-        lista.adicionar("Clodowaldo", "40028922");
+-        lista.adicionar("Nelson", "123456789");
+-        lista.adicionar("Oswaldo", "987654321");
++        lista.adicionar(1f);
++        lista.adicionar(1f);
++        lista.adicionar(1f);
++        lista.adicionar(1f);
++        lista.adicionar(1f);
++        lista.adicionar(1f);
+ 
++        System.out.println(somaLista(lista));
++    }
+ 
+-        System.out.println(lista.buscaTelefone("Clodowaldo"));
++    public static Object somaLista(Lista lista) {
++        float soma = 0;
++        for (int i = 0; i < lista.tamanho / 2; i++) {
++            soma = soma + lista.inicio.proximo.info + lista.inicio.info;
++        }
++        return soma;
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"1b45e511-dd6f-4149-a21b-3a75af6630b3\" name=\"Changes\" comment=\"Lista de Exercicios concluida\">\n      <change afterPath=\"$PROJECT_DIR$/Fila/Fila.iml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Fila/src/Fila.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Fila/src/No.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28_[Changes]1/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_1.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Pilhadinamica/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Pilhadinamica/src/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/asteristico.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/asteristico2.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/desafio_sorteio.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/dez_cem.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/exc_6_loop.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/fatorial.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/fibonacci.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/tabuada.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/tabuada01.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/val_5_6.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estrutura_dados/val_int_until_0.class\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2N5vpLUw8vXunvzDUY3Y12CLxZX\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"jdk.selected.JAVA_MODULE\": \"17\",\n    \"last_opened_file_path\": \"/home/carjooj/IdeaProjects/Estrutura_dados\",\n    \"project.structure.last.edited\": \"Project\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\"\n  }\n}]]></component>\n  <component name=\"RunManager\" selected=\"Application.Main (4)\">\n    <configuration name=\"Main (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"listaencadeada\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main (2)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"Fila\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main (3)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"Estrutura_dados\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main (4)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"Fila\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"Fila\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main (4)\" />\n        <item itemvalue=\"Application.Main (3)\" />\n        <item itemvalue=\"Application.Main (2)\" />\n        <item itemvalue=\"Application.Main (1)\" />\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"1b45e511-dd6f-4149-a21b-3a75af6630b3\" name=\"Changes\" comment=\"\" />\n      <created>1678966942469</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1678966942469</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/listaencadeada/src/Main.java</url>\n          <line>9</line>\n          <option name=\"timeStamp\" value=\"5\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/Pilhadinamica/src/Main.java</url>\n          <line>11</line>\n          <option name=\"timeStamp\" value=\"7\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/Estrutura_dados$Main__2_.ic\" NAME=\"Main (2) Coverage Results\" MODIFIED=\"1680564378097\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 68aa6e62390abfee060859b5e88cd7bbb4efd24d)
++++ b/.idea/workspace.xml	(date 1681864300392)
+@@ -4,27 +4,16 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1b45e511-dd6f-4149-a21b-3a75af6630b3" name="Changes" comment="Lista de Exercicios concluida">
+-      <change afterPath="$PROJECT_DIR$/Fila/Fila.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Fila/src/Fila.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Fila/src/No.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="1b45e511-dd6f-4149-a21b-3a75af6630b3" name="Changes" comment="Estrutura de fila concluída (basicamente uma lista com o remover da pilha)">
+       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28_[Changes]1/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2023_13_28__Changes_1.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Pilhadinamica/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pilhadinamica/src/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/asteristico.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/asteristico2.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/desafio_sorteio.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/dez_cem.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/exc_6_loop.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/fatorial.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/fibonacci.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/tabuada.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/tabuada01.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/val_5_6.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estrutura_dados/val_int_until_0.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Fila/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fila/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/listaencadeada/src/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/listaencadeada/src/Lista.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/listaencadeada/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/listaencadeada/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/listaencadeada/src/No.java" beforeDir="false" afterPath="$PROJECT_DIR$/listaencadeada/src/No.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/listaencadeada/Lista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/listaencadeada/Lista.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/listaencadeada/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/listaencadeada/Main.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/listaencadeada/No.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/listaencadeada/No.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -49,20 +38,20 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
+-    "jdk.selected.JAVA_MODULE": "17",
+-    "last_opened_file_path": "/home/carjooj/IdeaProjects/Estrutura_dados",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/carjooj/IdeaProjects/Estrutura_dados&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+   }
+-}]]></component>
+-  <component name="RunManager" selected="Application.Main (4)">
++}</component>
++  <component name="RunManager" selected="Application.Main (5)">
+     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="Main" />
+       <module name="listaencadeada" />
+@@ -91,20 +80,20 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="Main" />
+-      <module name="Fila" />
++      <module name="praticaProva" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Main (5)" />
++        <item itemvalue="Application.Main (1)" />
+         <item itemvalue="Application.Main (4)" />
+         <item itemvalue="Application.Main (3)" />
+         <item itemvalue="Application.Main (2)" />
+-        <item itemvalue="Application.Main (1)" />
+-        <item itemvalue="Application.Main" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -117,6 +106,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1678966942469</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Estrutura de fila concluída (basicamente uma lista com o remover da pilha)">
++      <created>1680572148129</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1680572148129</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -130,14 +127,13 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Estrutura de fila concluída (basicamente uma lista com o remover da pilha)" />
++    <option name="LAST_COMMIT_MESSAGE" value="Estrutura de fila concluída (basicamente uma lista com o remover da pilha)" />
++  </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+       <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/listaencadeada/src/Main.java</url>
+-          <line>9</line>
+-          <option name="timeStamp" value="5" />
+-        </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/Pilhadinamica/src/Main.java</url>
+           <line>11</line>
+Index: listaencadeada/src/Lista.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.w3c.dom.ls.LSOutput;\n\npublic class Lista {\n    No inicio;\n    No fim;\n    int tamanho;\n\n    Lista(){\n        inicio = null;\n        fim = null;\n        tamanho = 0;\n    }\n\n    void adicionar(String nome, String tel){\n        No no = new No(nome, tel);\n        if (estaVazia()){\n            inicio = no;\n        }\n        else {\n            fim.proximo = no;\n        }\n        fim = no;\n        tamanho++;\n    }\n\n    boolean estaVazia() {\n        return tamanho == 0;\n    }\n    void imprimirLista(){\n        No no = inicio;\n        for (int i = 0; i < tamanho; i++) {\n            System.out.println(no.nome + \" - \" + no.tel);\n            no = no.proximo;\n        }\n    }\n\n   /* Object retornarInfo(int indice){\n        No no = inicio;\n        for (int i = 1; i < indice; i++) {\n            no = no.proximo;\n        }\n        return no.info;\n    }*/\n\n    String buscaTelefone(String nome){\n        No no = inicio;\n        for (int i = 0; i < tamanho; i++) {\n            if (no.nome.equals(nome)) {\n                return no.tel;\n            }\n            no = no.proximo;\n        }\n        return \"Não localizado\";\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/listaencadeada/src/Lista.java b/listaencadeada/src/Lista.java
+--- a/listaencadeada/src/Lista.java	(revision 68aa6e62390abfee060859b5e88cd7bbb4efd24d)
++++ b/listaencadeada/src/Lista.java	(date 1681857233170)
+@@ -1,5 +1,3 @@
+-import org.w3c.dom.ls.LSOutput;
+-
+ public class Lista {
+     No inicio;
+     No fim;
+@@ -11,8 +9,8 @@
+         tamanho = 0;
+     }
+ 
+-    void adicionar(String nome, String tel){
+-        No no = new No(nome, tel);
++    void adicionar(float info){
++        No no = new No(info);
+         if (estaVazia()){
+             inicio = no;
+         }
+@@ -29,20 +27,20 @@
+     void imprimirLista(){
+         No no = inicio;
+         for (int i = 0; i < tamanho; i++) {
+-            System.out.println(no.nome + " - " + no.tel);
++            System.out.println(no.info);
+             no = no.proximo;
+         }
+     }
+ 
+-   /* Object retornarInfo(int indice){
++    Object retornarInfo(int indice){
+         No no = inicio;
+         for (int i = 1; i < indice; i++) {
+             no = no.proximo;
+         }
+         return no.info;
+-    }*/
++    }
+ 
+-    String buscaTelefone(String nome){
++    /*String buscaTelefone(String nome){
+         No no = inicio;
+         for (int i = 0; i < tamanho; i++) {
+             if (no.nome.equals(nome)) {
+@@ -51,5 +49,5 @@
+             no = no.proximo;
+         }
+         return "Não localizado";
+-    }
++    }*/
+ }
+Index: listaencadeada/src/No.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class No {\n    String nome;\n    String tel;\n    No proximo;\n\n    No(String nome, String tel){\n        this.nome = nome;\n        this.tel = tel;\n        proximo = null;\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/listaencadeada/src/No.java b/listaencadeada/src/No.java
+--- a/listaencadeada/src/No.java	(revision 68aa6e62390abfee060859b5e88cd7bbb4efd24d)
++++ b/listaencadeada/src/No.java	(date 1681857233086)
+@@ -1,11 +1,9 @@
+ public class No {
+-    String nome;
+-    String tel;
++    float info;
+     No proximo;
+ 
+-    No(String nome, String tel){
+-        this.nome = nome;
+-        this.tel = tel;
++    No(float info){
++        this.info = info;
+         proximo = null;
+ 
+     }
